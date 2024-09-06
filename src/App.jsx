@@ -1,6 +1,6 @@
 // import React from 'react'
 
-import { Header, Article } from './components/index'
+import { Header, Article, Skills } from './components/index'
 
 function App() {
 
@@ -9,6 +9,7 @@ function App() {
 		<div className='container'>
 			<Header />
 			<Article />
+			<Skills />
 		</div>
 	)
 }

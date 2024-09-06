@@ -4,9 +4,17 @@
 
 @import './components/all';
 
-
 .container {
- margin: 0 auto;
- max-width: $container-width;
- padding: 0 20px;
+	margin: 0 auto;
+	max-width: $container-width;
+	padding: 0 20px;
+}
+
+body {
+	font-size: $fs16;
+	font-weight: $fw400;
+	line-height: $lh28;
+	letter-spacing: $ls2;
+	color: $text-color;
+	font-family: 'Sora', sans-serif;
 }
