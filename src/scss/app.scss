@@ -1,0 +1,12 @@
+@import './fonts';
+@import './variables';
+@import './libs/normalize';
+
+@import './components/all';
+
+
+.container {
+ margin: 0 auto;
+ max-width: $container-width;
+ padding: 0 20px;
+}

@@ -1,0 +1,42 @@
+@import '../variables';
+
+.header__wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 40px;
+	padding-bottom: 190px;
+}
+
+.nav__list {
+	display: flex;
+	cursor: pointer;
+	gap: 40px;
+
+	li {
+		padding: 8px 16px;
+		
+	}
+	
+}
+.active {
+	border-radius: 5px;
+ outline: 1px solid $black
+}
+	
+
+.header__logo {
+	display: flex;
+	gap: 20px;
+}
+
+.btn {
+	cursor: pointer;
+	background-color: $black;
+	padding: 10px 20px;
+	border-radius: 5px;
+	color: white;
+	text-align: center;
+}
+
+

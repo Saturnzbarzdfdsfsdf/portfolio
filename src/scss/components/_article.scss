@@ -1,0 +1,60 @@
+@import '../variables';
+
+.title-wrapper {
+	max-width: 600px;
+
+	h3 {
+		font-weight: $fw400;
+		font-size: $fs48;
+		padding-bottom: 45px;
+
+		span {
+			font-weight: $fw700;
+		}
+	}
+}
+
+.article__title {
+	font-size: $fs48;
+	font-weight: $fw400;
+	padding-bottom: 40px;
+
+	span {
+		font-weight: $fw700;
+	}
+}
+
+.article__title-two {
+	font-weight: $fw600;
+	font-size: $fs48;
+	padding-bottom: 20px;
+
+	span {
+		font-weight: $fw700;
+		-webkit-text-stroke-width: 3px;
+    
+	}
+}
+
+.description {
+  color: $text-color;
+  padding-bottom: 130px;
+}
+
+
+.seated-man {
+position: absolute;
+top: 150px;
+right: 400px;
+}
+
+.social ul {
+  display: flex;
+  gap: 20px;
+
+  li {
+    border-radius: 20px;
+    border: 2px solid;
+    
+  }
+}

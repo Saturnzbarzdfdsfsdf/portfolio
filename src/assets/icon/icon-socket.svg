@@ -1,0 +1,14 @@
+<svg width="56.000000" height="56.000000" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip4_360">
+			<rect id="icon-socket" rx="-0.500000" width="55.000000" height="55.000000" transform="translate(0.500000 0.500000)" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<rect id="icon-socket" rx="-0.500000" width="55.000000" height="55.000000" transform="translate(0.500000 0.500000)" fill="#FFFFFF" fill-opacity="0"/>
+	<g clip-path="url(#clip4_360)">
+		<path id="Vector" d="M55.98 27.38C55.83 18.02 50.61 8.9 42.54 4.1C36.17 0.14 28.14 -0.93 20.9 0.9C10 3.64 1.31 13.51 0.21 24.76C-1.16 35.38 4.21 46.43 13.39 51.88C22.38 57.51 34.61 57.29 43.4 51.35C51.33 46.21 56.24 36.83 55.98 27.39L55.98 27.38ZM29.54 51.84C16.82 53.1 4.51 42.31 4.17 29.55C3.21 19.19 10.04 8.94 19.79 5.51C33.47 0.02 50.27 10.16 51.68 24.83C53.89 38.01 42.92 51.43 29.54 51.84ZM21.17 26.58L39.57 11.53L29.63 26.62C26.81 26.62 23.99 26.62 21.17 26.58ZM26.34 29.36L34.8 29.4L16.4 44.49L26.34 29.36Z" fill="#010101" fill-opacity="1.000000" fill-rule="nonzero"/>
+	</g>
+</svg>
