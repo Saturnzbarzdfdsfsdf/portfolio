@@ -1,0 +1,9 @@
+@use '../base/variables' as v;
+@use '../base/mixins';
+
+body {
+	font-size: v.$fs16;
+	background-color: v.$color-bg;
+	color: v.$color-text-white;
+	font-family: v.$ff_JetBrains;
+}

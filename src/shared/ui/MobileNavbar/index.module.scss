@@ -1,0 +1,28 @@
+@use '../../sass/base/variables' as v;
+.nav {
+	padding: 100px 0 0 0;
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+		text-transform: capitalize;
+
+		gap: 20px;
+	}
+
+	&__link {
+		font-size: v.$fs25;
+		font-weight: 900;
+		padding: 15px;
+		color: v.$color-bg;
+
+		transition: background-color, color 0.3s ease-in;
+
+		text-decoration: none;
+
+		&:hover {
+			background-color: v.$color-bg;
+			color: v.$color-accent;
+		}
+	}
+}

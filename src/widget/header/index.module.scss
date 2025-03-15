@@ -1,0 +1,39 @@
+@use '../../shared/sass/base/variables' as v;
+
+.header {
+	height: 80px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	.logo {
+		font-size: 36px;
+		span {
+			color: v.$color-accent;
+		}
+	}
+}
+
+.button {
+	cursor: pointer;
+	// font-size: v.$fs25;
+	font-weight: 900;
+	padding: 5px 10px;
+	border-radius: 20px;
+
+	background-color: v.$color-accent;
+	border: 1px solid v.$color-accent;
+
+	transition: v.$base-bg-transition;
+
+	&:hover {
+		background-color: v.$color-bg;
+		color: v.$color-accent;
+	}
+}
+
+@media (max-width: 1200px) {
+	.button {
+		display: none;
+	}
+}

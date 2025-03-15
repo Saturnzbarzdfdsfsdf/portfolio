@@ -1,0 +1,32 @@
+@use '../../sass/base/variables' as v;
+
+.list {
+  display: flex;
+  text-transform: capitalize;
+  gap: 25px;
+}
+
+.list li {
+  position: relative; 
+}
+
+.list li::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: v.$color-accent; 
+  transition: width 0.3s ease-in-out;
+}
+
+.list li:hover::after {
+  width: 100%;
+}
+
+@media (max-width: 1200px) {
+  .list {
+    display: none;
+  }
+}
