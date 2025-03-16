@@ -17,7 +17,7 @@ const Home = () => {
 					<div className={styles.social}>
 						<Button className={styles.sv}>
 							<span>download CV</span>
-							<MdOutlineFileDownload color='#00ff99' />
+							<MdOutlineFileDownload  color='#00ff99' />
 						</Button>
 
 						<Social

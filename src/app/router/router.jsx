@@ -4,8 +4,8 @@ import { Routes, Route } from 'react-router-dom'
 
 import { RoutesPath } from '../config/Routes'
 
-// components
 import Layout from '../layout'
+
 import {
 	ServicesPage,
 	ContactPage,

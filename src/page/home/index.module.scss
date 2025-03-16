@@ -7,13 +7,21 @@
 }
 
 .sv {
+	cursor: pointer;
 	margin-top: 20px;
 	text-transform: uppercase;
 	border-radius: 30px;
 	color: v.$color-accent;
+	font-weight: 600;
 	padding: 13px 35px;
 	background-color: v.$color-bg;
 	border: 1px solid v.$color-accent;
+	transition: v.$base-bg-transition;
+
+	&:hover {
+		background-color: v.$color-accent-hover;
+		color: v.$color-bg;
+	}
 
 	span {
 		margin-right: 10px;
@@ -66,9 +74,8 @@
 
 	}
 	.social {
-		display: flex;
+		flex-direction: row;
 		justify-content: space-between;
-		align-items: center;
 
 		.sv {
 			margin-top: 0px;

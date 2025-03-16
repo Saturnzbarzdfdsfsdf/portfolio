@@ -8,22 +8,27 @@ const index = () => {
 	return (
 		<div className={styles.box}>
 			{/* image */}
-			<div className={styles.image_box}>
-				<motion.div
-					className={styles.motion_div}
-					initial={{ opacity: 0 }}
-					animate={{
-						opacity: 1,
-						transition: { delay: 1.5, duration: 0.4, ease: 'easeIn' },
-					}}
-				>
-					<img className={styles.image} loading='lazy' src={ME} alt='Author' />
-				</motion.div>
-			</div>
-			{/* circle */}
 
+			<motion.div
+				className={styles.image_box}
+				initial={{ opacity: 0 }}
+				animate={{
+					opacity: 1,
+					transition: { delay: 2, duration: 0.4, ease: 'easeIn' },
+				}}
+			>
+				<img className={styles.image} loading='lazy' src={ME} alt='Author' />
+			</motion.div>
+			{/* </div> */}
+
+			{/* circle */}
 			<motion.svg
 				className={styles.svg}
+				initial={{ opacity: 0 }}
+				animate={{
+					opacity: 1,
+					transition: { delay: 3, duration: 0.4, ease: 'backInOut' },
+				}}
 				fill='transparent'
 				viewBox='0 0 506 506'
 				xmlns='http://www.w3.org/2000.svg'
