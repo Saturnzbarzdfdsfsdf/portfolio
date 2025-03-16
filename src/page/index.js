@@ -1,0 +1,5 @@
+export { default as Home } from './home/index'
+export { default as Services } from './services/index'
+export { default as Contact } from './contact/index'
+export { default as Resume } from './resume/index'
+export { default as Work } from './work/index'
