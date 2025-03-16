@@ -1,7 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-import { useLocation } from 'react-router-dom'
-
+import { Link, useLocation } from 'react-router-dom'
 import styles from './index.module.scss'
 
 const links = [
@@ -34,7 +32,10 @@ const Nav = () => {
 		<nav>
 			<ul className={styles.list}>
 				{links.map(link => (
-					<li key={link.path}>
+					<li
+						key={link.path}
+						className={location.pathname === link.path ? styles.active : ''}
+					>
 						<Link to={link.path}>{link.title}</Link>
 					</li>
 				))}

@@ -6,16 +6,23 @@ import { RoutesPath } from '../config/Routes'
 
 // components
 import Layout from '../layout'
-import { Services, Contact, Resume, Work } from '../../page'
+import {
+	ServicesPage,
+	ContactPage,
+	ResumePage,
+	WorkPage,
+	HomePage,
+} from '../../page'
 
 const AppRouter = () => {
 	return (
 		<Routes>
 			<Route path={RoutesPath.HOME} element={<Layout />}>
-				<Route path={RoutesPath.SERVICES} element={<Services />}></Route>
-				<Route path={RoutesPath.CONTACT} element={<Contact />}></Route>
-				<Route path={RoutesPath.RESUME} element={<Resume />}></Route>
-				<Route path={RoutesPath.WORK} element={<Work />}></Route>
+				<Route index element={<HomePage />} />
+				<Route path={RoutesPath.SERVICES} element={<ServicesPage />}></Route>
+				<Route path={RoutesPath.CONTACT} element={<ContactPage />}></Route>
+				<Route path={RoutesPath.RESUME} element={<ResumePage />}></Route>
+				<Route path={RoutesPath.WORK} element={<WorkPage />}></Route>
 			</Route>
 		</Routes>
 	)

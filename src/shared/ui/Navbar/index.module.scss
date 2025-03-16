@@ -7,22 +7,36 @@
 }
 
 .list li {
-  position: relative; 
+  position: relative;
 }
 
 .list li::after {
-  content: "";
+  content: '';
   position: absolute;
   bottom: -10px;
   left: 0;
   width: 0;
   height: 3px;
-  background-color: v.$color-accent; 
+  background-color: v.$color-accent;
   transition: width 0.3s ease-in-out;
 }
 
-.list li:hover::after {
-  width: 100%;
+.list li:hover {
+  &::after {
+    width: 100%;
+  }
+  a {
+    color: v.$color-accent;
+  }
+}
+
+.list li.active {
+  &::after {
+    width: 100%;
+  }
+  a {
+    color: v.$color-accent;
+  }
 }
 
 @media (max-width: 1200px) {

@@ -1,0 +1,100 @@
+@use '../../shared/sass/base/variables' as v;
+
+.box {
+	.image {
+		position: relative;
+
+		width: 298px;
+		height: 298px;
+		top: 50px;
+		mix-blend-mode: lighten;
+	}
+}
+
+.svg {
+	position: absolute;
+
+	top: 60px;
+	width: 300px;
+	height: 300px;
+}
+
+.image_box {
+	height: 300px;
+	width: 300px;
+	overflow: hidden;
+	border-radius: 50%;
+}
+
+@media (min-width: 1200px) {
+	.box {
+		.image {
+			position: relative;
+
+			width: 358px;
+			height: 358px;
+			top: -20px;
+			mix-blend-mode: lighten;
+		}
+	}
+
+	.svg {
+		position: absolute;
+
+		top: 150px;
+		right: 50px;
+		width: 400px;
+		height: 400px;
+	}
+
+	.image_box {
+		height: 400px;
+		width: 400px;
+	}
+}
+
+@media (min-width: 1400px) {
+	.box {
+		.image {
+			position: relative;
+
+			width: 458px;
+			height: 458px;
+			top: -20px;
+		}
+	}
+
+	.svg {
+		top: 170px;
+		right: 170px;
+		width: 506px;
+		height: 506px;
+	}
+
+	.image_box {
+		position: relative;
+		height: 506px;
+		width: 506px;
+	}
+}
+
+@media (min-width: 1600px) {
+	.image {
+		left: 0px;
+		top: -30px;
+	}
+}
+
+@media (min-width: 1601px) {
+	.svg {
+		top: 100px;
+	}
+
+	.image {
+		left: 50px;
+	}
+	.image_box {
+		right: 20px;
+		top: 32px;
+	}
+}

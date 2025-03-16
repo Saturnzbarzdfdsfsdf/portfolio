@@ -1,2 +1,5 @@
 export {default as Header} from './header/index'
-export {default as Footer} from './footer/index'
+export {default as MyDescription} from './myDescription/index'
+export {default as MyImage} from './myImage/index'
+export { default as Social } from './social/index'
+export { default as Stats } from './stats/index'

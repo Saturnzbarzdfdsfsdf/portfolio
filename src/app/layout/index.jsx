@@ -11,8 +11,10 @@ import styles from './index.module.scss'
 const Layout = () => {
 	return (
 		<div className={styles.container}>
+			{/* overlay animation */}
 			<StairTransition />
 			<Header />
+			{/* wrapper animation */}
 			<PageTransition>
 				<Outlet />
 			</PageTransition>

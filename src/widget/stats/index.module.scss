@@ -1,0 +1,28 @@
+.stats {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	gap: 20px;
+	flex-wrap: wrap;
+	margin-top: 30px;
+}
+
+.count_up {
+	font-size: 30px;
+	font-weight: 900;
+}
+
+.stats_text {
+	width: 150px;
+	// text-wrap: wrap;
+}
+
+@media (min-width: 1200px) {
+	.stats {
+    margin-top: 100px;
+		justify-content: space-between;
+		gap: 130px;
+		flex-wrap: nowrap; /* Если нужно */
+	}
+}
