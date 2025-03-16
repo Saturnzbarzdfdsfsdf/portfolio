@@ -1,0 +1,14 @@
+@use '../sass/base/variables' as v;
+
+.base_page {
+	
+	position: fixed;
+	top: 0;
+
+	pointer-events: none;
+
+	height: 100vh;
+	width: 100vw;
+
+	background-color: v.$color-bg;
+}

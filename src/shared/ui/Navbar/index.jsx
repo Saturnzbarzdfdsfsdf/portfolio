@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { useLocation } from 'react-router-dom'
 
 import styles from './index.module.scss'
 
@@ -27,6 +28,8 @@ const links = [
 ]
 
 const Nav = () => {
+	const location = useLocation()
+
 	return (
 		<nav>
 			<ul className={styles.list}>

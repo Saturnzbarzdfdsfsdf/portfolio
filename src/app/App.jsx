@@ -3,10 +3,9 @@ import AppRouter from './router/router'
 import './App.scss'
 
 function App() {
-
-  return (
+	return (
 		<>
-			<AppRouter/>
+				<AppRouter />
 		</>
 	)
 }
