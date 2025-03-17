@@ -1,28 +1,32 @@
+@use '../../shared/sass/base/variables' as v;
+@use '../../shared/sass/base/mixins';
+
+
+
 .stats {
-	display: flex;
-	align-items: center;
-	text-align: center;
-	justify-content: center;
-	gap: 20px;
+	@include mixins.flex_center;
+
 	flex-wrap: wrap;
+	text-align: center;
+
+	gap: v.$g20;
 	margin-top: 30px;
 }
 
 .count_up {
-	font-size: 30px;
-	font-weight: 900;
+	font-size: v.$fs50;
+	font-weight: v.$fw900;
 }
 
 .stats_text {
 	width: 150px;
-	// text-wrap: wrap;
 }
 
 @media (min-width: 1200px) {
 	.stats {
-    margin-top: 100px;
+		flex-wrap: nowrap; 
 		justify-content: space-between;
-		gap: 130px;
-		flex-wrap: nowrap; /* Если нужно */
+    margin-top: 100px;
+		gap: v.$g130;
 	}
 }

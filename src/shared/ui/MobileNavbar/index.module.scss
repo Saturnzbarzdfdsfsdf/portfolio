@@ -8,12 +8,12 @@
 		flex-direction: column;
 		text-transform: capitalize;
 
-		gap: 20px;
+		gap: v.$g20;
 	}
 
 	&__link {
 		font-size: v.$fs25;
-		font-weight: 900;
+		font-weight: v.$fw900;
 		padding: 15px;
 		color: v.$color-bg;
 

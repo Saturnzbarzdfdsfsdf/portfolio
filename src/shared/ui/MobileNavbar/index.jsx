@@ -29,7 +29,7 @@ const index = () => {
 	return (
 		<nav className={styles.nav}>
 			<ul className={styles.nav__list}>
-				{links.map(link => (
+				{links.map((link) => (
 					<Link to={link.path} key={links.path} className={styles.nav__link}>
 						{link.title}
 					</Link>

@@ -1,8 +1,6 @@
 import { Link } from 'react-router-dom'
 import { FaGithub, FaVk, FaInstagram, FaTelegramPlane } from 'react-icons/fa'
 
-// import styles from './index.module.scss'
-
 const social = [
 	{ icon: <FaGithub />, path: '' },
 	{ icon: <FaVk />, path: '' },

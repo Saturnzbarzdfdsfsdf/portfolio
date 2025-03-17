@@ -1,13 +1,15 @@
 @use '../../sass/base/variables' as v;
 
 .burger {
-	z-index: v.$z999;
-	width: 30px;
-	height: 23px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	cursor: pointer;
+
+	width: 30px;
+	height: 23px;
+	
+	z-index: v.$z999;
 
 	span {
 		width: 100%;
@@ -18,15 +20,14 @@
 	}
 
 	span:nth-child(2) {
-		width: 85%; // Средняя палочка короче
-		margin-left: auto; // Выравниваем по правой стороне
+		width: 85%; 
+		margin-left: auto;
 	}
 	span:nth-child(1) {
-		width: 70%; // Средняя палочка короче
-		margin-left: auto; // Выравниваем по правой стороне
+		width: 70%; 
+		margin-left: auto; 
 	}
 
-	// Анимация для открытого состояния
 	&.open {
 		span:nth-child(1) {
 			width: 100%;
@@ -34,7 +35,6 @@
 		}
 
 		span:nth-child(2) {
-			// width: 100%;
 			opacity: 0;
 		}
 

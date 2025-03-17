@@ -1,17 +1,17 @@
 @use '../../shared/sass/base/variables' as v;
+@use '../../shared/sass/base/mixins';
 
 .box {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+	@include mixins.flex_col_center ;
+
 	text-align: center;
 
-	gap: 10px;
+	gap: v.$g10;
 	margin-top: 35px;
 
 	h3 {
 		text-transform: capitalize;
-		font-size: 14px;
+		font-size: v.$fs14;
 	}
 }
 
@@ -26,26 +26,21 @@
 }
 
 .text {
-	font-weight: 200;
-	font-size: 14px;
-	line-height: 30px;
+	font-weight: v.$fw200;
+	font-size: v.$fs14;
+	line-height: v.$lh30;
 }
+
 
 @media (min-width: 768px) {
 	.title {
-		font-size: 55px;
+		font-size: v.$fs55;
 	}
 }
 
 @media (min-width: 968px) {
 	.title {
-		font-size: 75px;
-		margin-bottom: 10px;
-		font-weight: v.$fw600;
-
-		span {
-			color: v.$color-accent;
-		}
+		font-size: v.$fs75;
 	}
 	.text {
 		max-width: 600px;
@@ -57,52 +52,46 @@
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
-		// text-align: center;
 
-		gap: 10px;
+		gap: v.$g10;
 		margin-top: 15px;
 
 		h3 {
 			text-transform: capitalize;
-			font-size: 16px;
+			font-size: v.$fs16;
 		}
 	}
 	.title {
 		text-align: left;
-		margin-bottom: 20px;
-
-		span {
-			color: v.$color-accent;
-		}
 	}
 
 	.text {
-		font-weight: 400;
+		font-weight: v.$fw400;
 		text-align: left;
-		font-size: 18px;
-		line-height: 30px;
+		font-size: v.$fs18;
+		line-height: v.$lh30;
 		margin-bottom: 20px;
 	}
 }
 
 @media (min-width: 1400px) {
 	.box {
-		gap: 10px;
+		gap: v.$g10;
 		margin-top: 15px;
 
 		h3 {
 			text-transform: capitalize;
-			font-size: 20px;
+			font-size: v.$fs20;
 		}
 	}
 	.title {
-		font-size: 88px;
+		font-size: v.$fs88;
 		margin-bottom: 20px;
 	}
 
 	.text {
-		font-size: 20px;
-		line-height: 35px;
+		font-size: v.$fs20;
+		line-height: v.$lh35;
 	}
 }
 

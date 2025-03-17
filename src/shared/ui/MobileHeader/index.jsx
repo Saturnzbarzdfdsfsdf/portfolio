@@ -2,7 +2,6 @@ import React from 'react'
 
 import { Button, MobileNavbar } from '../index'
 
-
 import styles from './index.module.scss'
 
 const index = ({ isActive }) => {

@@ -27,15 +27,13 @@
 .button {
 	cursor: pointer;
 	font-size: v.$fs30;
-	font-weight: 900;
+	font-weight: v.$fw900;
 	text-align: center;
 	white-space: nowrap;
 	margin-top: 100px;
 	padding: 10px;
 	text-align: left;
 	width: 100%;
-
-	// width: 450px;
 
 	background-color: v.$color-bg;
 	border-bottom: 2px solid v.$color-accent;
