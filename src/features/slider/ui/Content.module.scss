@@ -1,0 +1,72 @@
+@use '../../../shared/sass/base/variables' as v;
+
+.wrapper {
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: v.$g32;
+
+  @media (max-width:1024px) {
+    gap: v.$g16;
+    }
+  @media (max-width:1024px) {
+    gap: v.$g10;
+    }
+
+    @media (max-width:425px) {
+      max-width: 100%;
+    }
+
+}
+
+.number {
+  color: transparent; 
+  -webkit-text-stroke: 1px #fff; 
+   font-size: v.$fs96;
+
+   @media (max-width:1024px) {
+    font-size: v.$fs64;
+    }
+    @media (max-width: 768px) {
+      font-size: v.$fs48;  
+    }
+}
+
+.title {
+font-size: v.$fs48;
+
+@media (max-width:1024px) {
+  font-size: v.$fs32;
+}
+
+@media (max-width: 768px) {
+  font-size: v.$fs24;;   
+}
+}
+
+.description {
+  font-size: 16px;
+  color: rgb(108, 107, 107);
+  @media (max-width:1024px) {
+    font-size: v.$fs14;
+    }
+
+}
+
+.stack {
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: v.$fw900;
+  color: v.$color-accent;
+  gap: v.$g16;
+  padding-bottom: v.$pb32;
+  border-bottom: 2px solid  rgb(108, 107, 107);
+
+  @media (max-width:1024px) {
+    font-size: v.$fs16;
+    padding-bottom: v.$pb24;
+    gap: v.$g8;
+    }
+}
+
+

@@ -1,0 +1,22 @@
+@use  '../../shared/sass/base/variables' as v;
+
+.slider {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  // padding: 0 1rem;
+  gap: v.$g32;
+
+  &__content {
+    display: flex;
+    // flex-direction: column;
+    justify-content: space-between;
+
+    @media (max-width:425px) {
+      flex-direction: column;
+      gap: v.$g32;
+    }
+  }
+
+}

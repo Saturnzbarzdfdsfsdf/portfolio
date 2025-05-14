@@ -7,3 +7,9 @@ body {
 	color: v.$color-text-white;
 	font-family: v.$ff_JetBrains;
 }
+
+.container {
+	margin: 0 auto;
+	max-width: 1560px;
+	padding: 0 20px;
+}
