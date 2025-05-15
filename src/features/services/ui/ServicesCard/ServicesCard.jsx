@@ -1,19 +1,30 @@
 import React from 'react'
-
+import { CgAirplane } from "react-icons/cg";
 import style from './ServicesCard.module.scss'
 
 const ServicesCard = () => {
   return (
 
-    <div className={style.wrapper}>
+    <div className={style.card}>
 
-    <h2 className={style.number}>01</h2>
-    <h3 className={style.title}>Web Development</h3>
-    <p className={style.description}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima iure reprehenderit doloremque facili</p>
+      <div className={style.card__hover}>
 
-    {/* <ProjectLink/> */}
+        <div className={style.card__box}>
+        <h2 className={style.number}>01</h2>
 
-  </div>
+          <div className={style.card__fly}>
+          <CgAirplane  size='30' color='#1c1c22' />
+          </div>
+
+        </div>
+
+        <h3 className={style.card__title}>Web Development</h3>
+      </div>
+
+      <p className={style.card__description}>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima iure reprehenderit doloremque facili
+      </p>
+    </div>
   )
 }
 

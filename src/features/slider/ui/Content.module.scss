@@ -1,5 +1,7 @@
 @use '../../../shared/sass/base/variables' as v;
 
+@use '../../../shared/sass/base/mixins';
+
 .wrapper {
   max-width: 50%;
   display: flex;
@@ -9,10 +11,6 @@
   @media (max-width:1024px) {
     gap: v.$g16;
     }
-  @media (max-width:1024px) {
-    gap: v.$g10;
-    }
-
     @media (max-width:425px) {
       max-width: 100%;
     }
@@ -45,8 +43,9 @@ font-size: v.$fs48;
 }
 
 .description {
-  font-size: 16px;
-  color: rgb(108, 107, 107);
+  font-size: v.$fs16;
+  color: v.$color-text-secondary;
+  
   @media (max-width:1024px) {
     font-size: v.$fs14;
     }
@@ -60,7 +59,7 @@ font-size: v.$fs48;
   color: v.$color-accent;
   gap: v.$g16;
   padding-bottom: v.$pb32;
-  border-bottom: 2px solid  rgb(108, 107, 107);
+  border-bottom: 2px solid v.$color-secondary;
 
   @media (max-width:1024px) {
     font-size: v.$fs16;
@@ -70,3 +69,24 @@ font-size: v.$fs48;
 }
 
 
+.icon_container {
+	display: flex;
+	gap: v.$g24;
+}
+
+.icon_style {
+ @include mixins.flex_center ;
+
+	color: v.$color-accent;
+	border-radius: 50%;
+	font-size: v.$fs24;
+	width: 64px;
+	height: 64px;
+	border: 1px solid v.$color-accent;
+	transition: v.$base-bg-transition;
+
+	&:hover {
+		color: v.$color-bg;
+		background-color: v.$color-accent;
+	}
+}

@@ -1,45 +1,91 @@
-@use '../../../../shared/sass/base/variables' as v ;
+@use '../../../../shared/sass/base/variables' as v;
 
-.wrapper {
+.card {
   cursor: pointer;
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  max-width: 50vw;
+  gap: 24px;
+  
+  @media (max-width: 425px) {
+    max-width: 100vw;
+    
+    
+  }
+  
+  .number, .card__title, .card__fly {
+    transition: 
+      color 0.3s ease, 
+      -webkit-text-stroke-color 0.3s ease, 
+      background-color 0.3s ease, 
+      transform 0.3s ease;
+  }
+
+  .card__fly {
+    transform: rotate(0deg); 
+  }
+
+  &:hover {
+    .number {
+      -webkit-text-stroke-color: v.$color-accent-hover;
+      color: transparent; 
+    }
+    .card__title {
+      color: v.$color-accent-hover;
+    }
+    .card__fly {
+      background-color: v.$color-accent-hover;
+      transform: rotate(20deg);
+    }
+  }
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__fly {
+    display: grid;
+    place-items: center;
+    width: 55px;
+    height: 55px;
+    background-color: #fff;
+    border-radius: 50%;
+  }
+
+  &__title {
+    font-size: v.$fs48;
+
+    @media (max-width: 1024px) {
+      font-size: v.$fs32;
+    }
+
+    @media (max-width: 768px) {
+      font-size: v.$fs24;   
+    }
+  }
+
+  &__description {
+    font-size: 16px;
+    padding-bottom: 24px;
+    color: v.$color-text-secondary;
+    border-bottom: 2px solid v.$color-secondary;
+
+    @media (max-width: 1024px) {
+      font-size: v.$fs14;
+    }
+  }
 }
 
 .number {
   color: transparent; 
   -webkit-text-stroke: 1px #fff; 
-   font-size: v.$fs96;
-
-   @media (max-width:1024px) {
-    font-size: v.$fs64;
-    }
-    @media (max-width: 768px) {
-      font-size: v.$fs48;  
-    }
-}
-
-
-.title {
-  font-size: v.$fs48;
-  
-  @media (max-width:1024px) {
-    font-size: v.$fs32;
-  }
-  
-  @media (max-width: 768px) {
-    font-size: v.$fs24;;   
-  }
-  }
-
-.description {
-  font-size: 16px;
+  font-size: v.$fs96;
   padding-bottom: 24px;
-  color: rgb(108, 107, 107);
-  border-bottom: 2px solid rgba(108, 107, 107, 0.2);
-  @media (max-width:1024px) {
-    font-size: v.$fs14;
-    }
+
+  @media (max-width: 1024px) {
+    font-size: v.$fs64;
+  }
+  @media (max-width: 768px) {
+    font-size: v.$fs48;  
+  }
 }

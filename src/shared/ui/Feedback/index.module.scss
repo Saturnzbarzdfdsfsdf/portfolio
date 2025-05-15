@@ -1,0 +1,28 @@
+@use '../../sass/base/variables' as v;
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.img_box {
+  display: grid;
+  place-items: center;
+  font-size: 24px;
+  background-color: v.$color-secondary;
+  width: 72px;
+  height: 72px;
+
+}
+
+.feedback {
+  p {
+    font-size: 22px;
+  }
+  span {
+    font-size: 18px;
+    color: v.$color-text-secondary;
+  }
+  
+}

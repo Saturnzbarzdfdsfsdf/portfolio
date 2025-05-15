@@ -1,8 +1,6 @@
-import React from 'react'
-
 import style from './Content.module.scss'
 
-import ProjectLink from './ProjectLink'
+import { Social } from '../../../widget'
 
 const Content = ({projects}) => {
 
@@ -20,7 +18,10 @@ const Content = ({projects}) => {
         ))}
       </ul>
 
-      <ProjectLink/>
+        <Social
+            containerStyles={style.icon_container}
+            iconStyles={style.icon_style}
+        />
 
     </div>
   )

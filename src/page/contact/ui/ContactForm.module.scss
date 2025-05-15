@@ -1,0 +1,8 @@
+@use '../../../shared/sass/base/variables' as v;
+
+.wrapper {
+  background-color: v.$color-secondary;
+  min-height: 90vh;
+  width: 50%;
+  border-radius: 16px;
+}
