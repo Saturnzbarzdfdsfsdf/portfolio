@@ -9,12 +9,13 @@ import StairTransition from '../../shared/libs/StairTransition'
 import styles from './index.module.scss'
 
 const Layout = () => {
+
+
 	return (
 		<div className={styles.container}>
 			{/* overlay animation */}
 			<StairTransition />
-			<Header />
-			{/* wrapper animation */}
+				<Header />
 			<PageTransition>
 				<Outlet />
 			</PageTransition>

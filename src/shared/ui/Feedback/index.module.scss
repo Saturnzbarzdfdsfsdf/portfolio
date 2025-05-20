@@ -3,13 +3,13 @@
 .wrapper {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: v.$g24;
 }
 
 .img_box {
   display: grid;
   place-items: center;
-  font-size: 24px;
+  font-size: v.$fs24;
   background-color: v.$color-secondary;
   width: 72px;
   height: 72px;
@@ -18,7 +18,12 @@
 
 .feedback {
   p {
-    font-size: 22px;
+    transition: v.$base-color-transition;
+    font-size: v.$fs22;
+
+    &:hover {
+      color: v.$color-accent-hover;
+    }
   }
   span {
     font-size: 18px;

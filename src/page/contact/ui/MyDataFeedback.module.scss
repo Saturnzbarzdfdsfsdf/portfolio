@@ -1,12 +1,18 @@
 .wrapper {
   display: grid;
   place-items: center;
-  width: 50%;
+  width: 100%;
+  max-width: 50%;
 }
-
 
 .feedback_box {
 display: flex;
 flex-direction: column;
 gap: 32px;
+
+@media (max-width: 768px) {
+    display: none;
+
+  }
+
 }

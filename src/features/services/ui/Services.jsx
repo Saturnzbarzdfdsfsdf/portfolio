@@ -1,5 +1,3 @@
-import React from 'react'
-
 import ServicesCard from './ServicesCard/ServicesCard'
 
 import style from './Services.module.scss' 

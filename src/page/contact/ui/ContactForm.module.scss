@@ -2,7 +2,43 @@
 
 .wrapper {
   background-color: v.$color-secondary;
-  min-height: 90vh;
-  width: 50%;
+  // min-height: 90vh;
+  width: 100%;
+  max-width: 50%;
   border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  
+  @media (max-width: 1024px) {
+    max-width: 100%;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 48px 32px 0 32px;
+    
+    @media (max-width: 768px) {
+      padding: 32px 16px 0 16px;
+    }
+
+  }
+
+
+  &__title {
+    // color: v.$color-accent;
+    color: v.$color-accent;
+    font-size: 42px;
+    font-weight: 400;
+    
+    @media (max-width: 768px) {
+      font-size: 32px;
+    }
+  }
+  &__description {
+    color: v.$color-text-secondary;
+    width: 100%;
+    // text-wrap: balance;
+  }
 }

@@ -5,14 +5,14 @@
   display: flex;
   flex-direction: column;
   gap: 24px;
-  
+
   @media (max-width: 425px) {
     max-width: 100vw;
     
     
   }
   
-  .number, .card__title, .card__fly {
+  .number, .card__title, .card__icon {
     transition: 
       color 0.3s ease, 
       -webkit-text-stroke-color 0.3s ease, 
@@ -20,9 +20,7 @@
       transform 0.3s ease;
   }
 
-  .card__fly {
-    transform: rotate(0deg); 
-  }
+
 
   &:hover {
     .number {
@@ -32,7 +30,7 @@
     .card__title {
       color: v.$color-accent-hover;
     }
-    .card__fly {
+    .card__icon {
       background-color: v.$color-accent-hover;
       transform: rotate(20deg);
     }
@@ -43,13 +41,12 @@
     justify-content: space-between;
   }
 
-  &__fly {
-    display: grid;
-    place-items: center;
+  &__icon {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 50%;
     width: 55px;
     height: 55px;
-    background-color: #fff;
-    border-radius: 50%;
   }
 
   &__title {

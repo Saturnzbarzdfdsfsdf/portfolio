@@ -1,0 +1,75 @@
+@use '../../../shared/sass/base/variables' as v;
+
+
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: v.$g24;
+  padding: v.$p32;
+
+  @media (max-width: 768px) {
+    padding: 32px 16px 32px 16px;
+    gap: v.$g12;
+  }
+
+
+  &__inputs_wrapper {
+    display: flex;
+    flex-direction: column;
+
+    &:nth-last-child(2) {
+      padding-bottom: 20px;
+    }
+
+    input, textarea, select {
+      color: v.$color-accent;
+      background-color: v.$color-bg;
+      border-radius: v.$br8;
+      padding: v.$p16;
+      // font-weight: v.$fw400;
+    
+      &:hover {
+        outline: 2px solid v.$color-accent-hover; 
+        transition: outline 0.1s;
+      }
+  
+      &:focus {
+        outline: 2px solid v.$color-accent-hover; 
+        transition: outline 0.1s;
+      }
+    }
+  
+   
+    
+    input {
+      height: 56px;
+    
+    }
+  
+    textarea {
+      resize: none;
+      height: 150px;
+    }
+  }
+}
+
+.button {
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 32px;
+  background-color: v.$color-accent;
+  width: 100%;
+  max-width: 230px;
+  height: 48px;
+  
+  transition: v.$base-bg-transition;
+  
+  @media (max-width: 768px) {
+    max-width: 100%;
+  }
+
+  &:hover {
+    background-color: v.$color-accent-hover;
+  }
+}

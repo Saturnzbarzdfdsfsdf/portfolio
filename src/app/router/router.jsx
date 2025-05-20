@@ -6,6 +6,8 @@ import { RoutesPath } from '../config/Routes'
 
 import Layout from '../layout'
 
+import NotFoundPage from '../../page/Error/NotFoundPage'
+
 import {
 	ServicesPage,
 	ContactPage,
@@ -24,6 +26,7 @@ const AppRouter = () => {
 				<Route path={RoutesPath.RESUME} element={<ResumePage />}></Route>
 				<Route path={RoutesPath.WORK} element={<WorkPage />}></Route>
 			</Route>
+				<Route path="*" element={<NotFoundPage />}></Route>
 		</Routes>
 	)
 }

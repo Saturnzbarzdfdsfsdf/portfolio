@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { CgAirplane } from "react-icons/cg";
 import style from './ServicesCard.module.scss'
 
@@ -6,15 +6,14 @@ const ServicesCard = () => {
   return (
 
     <div className={style.card}>
-
       <div className={style.card__hover}>
 
         <div className={style.card__box}>
         <h2 className={style.number}>01</h2>
 
-          <div className={style.card__fly}>
-          <CgAirplane  size='30' color='#1c1c22' />
-          </div>
+ 
+            <CgAirplane className={style.card__icon} size='30' color='#1c1c22' />
+
 
         </div>
 
@@ -25,7 +24,10 @@ const ServicesCard = () => {
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima iure reprehenderit doloremque facili
       </p>
     </div>
+
   )
 }
 
 export default ServicesCard
+
+

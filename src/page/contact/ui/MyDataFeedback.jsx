@@ -8,9 +8,15 @@ import style from './MyDataFeedback.module.scss'
 import Feedback from '../../../shared/ui/Feedback'
 
 const contactsData = [
-  { icon: <FaPhoneAlt />, title: 'Phone', contacts: '+7 (999) 180 69-69' },
-  { icon: <MdEmail />, title: 'Email', contacts: 'it999work@gmail.com' },
-  { icon: <FaLocationDot />, title: 'Address', contacts: 'city Ivanovo' },
+  { icon: <FaPhoneAlt />, 
+    title: 'Phone', 
+    contacts: '+7 (999) 180 69-69' },
+  { icon: <MdEmail />,
+    title: 'Email',
+    contacts: 'it999work@gmail.com' },
+  { icon: <FaLocationDot />,
+    title: 'Address', 
+    contacts: 'city Ivanovo' },
 ]
 
 const MyDataFeedback = () => {
